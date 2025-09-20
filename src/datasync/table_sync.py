@@ -2,10 +2,6 @@ from datasync.utils import MysqlReader, Neo4jWriter
 import pymysql
 from googletrans import Translator
 
-
-
-
-
 class TableSynchronizer:
     def __init__(self):
         self.mysql_reader = MysqlReader()
