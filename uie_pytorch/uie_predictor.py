@@ -21,7 +21,7 @@ import math
 import argparse
 import os.path
 
-from utils import logger, get_bool_ids_greater_than, get_span, get_id_and_prob, cut_chinese_sent, dbc2sbc
+from uie_pytorch.utils import logger, get_bool_ids_greater_than, get_span, get_id_and_prob, cut_chinese_sent, dbc2sbc
 
 
 class ONNXInferBackend(object):
@@ -81,7 +81,7 @@ class PyTorchInferBackend:
                  multilingual=False,
                  device='cpu',
                  use_fp16=False):
-        from model import UIE, UIEM
+        from uie_pytorch.model import UIE, UIEM
         logger.info(">>> [PyTorchInferBackend] Creating Engine ...")
         if multilingual:
             self.model = UIEM.from_pretrained(model_path_prefix)

@@ -580,7 +580,7 @@ python convert.py --no_validate_output
 
 ```shell
 .
-├── utils.py          # 数据处理工具
+├── utils_neo4j_mysql.py          # 数据处理工具
 ├── model.py          # 模型组网脚本
 ├── doccano.py        # 数据标注脚本
 ├── doccano.md        # 数据标注文档

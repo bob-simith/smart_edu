@@ -1,4 +1,4 @@
-from datasync.utils import MysqlReader, Neo4jWriter
+from datasync.utils_neo4j_mysql import MysqlReader, Neo4jWriter
 import pymysql
 from googletrans import Translator
 
